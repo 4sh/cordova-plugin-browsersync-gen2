@@ -140,8 +140,8 @@
         // reload the page if the servers are not set yet
         setTimeout(window.location.reload.bind(window.location), 200);
     } else {
-        if(autoRedirectToLocal && SERVERS['local']) {
-            window.location.href = SERVERS['local'];
+        if(autoRedirectToLocal && SERVERS['external']) {
+            window.location.href = SERVERS['external'];
         }
     }
 
