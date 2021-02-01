@@ -59,6 +59,18 @@ cordova run --live-reload --ignore=lib/**/*.*
 
 The `--ignore` commands takes an [anymatch](https://github.com/es128/anymatch) compatible destination relative to the `www` folder.
 
+You can use multiple --ignore to ignore multiple files
+```
+cordova run --live-reload --ignore=lib/**/*.* --ignore=assets/**
+```
+
+### Skipping start page
+To skip the start page and load directly the external route, use the `--skip-start-page` option, for example:
+
+```
+cordova run --live-reload --skip-start-page
+```
+
 ### Setting custom hostname
 Sometimes, depending on your network, your OS will report multiple external IP addresses. If this happens, by default browsersync just picks the first one and hopes for the best.
 

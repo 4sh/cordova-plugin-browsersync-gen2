@@ -129,6 +129,7 @@
     </div>
     <script type="text/javascript">
     var SERVERS = __SERVERS__;
+    var autoRedirectToLocal = __AUTO_REDIRECT_TO_LOCAL__;
 
     var tmpl = document.getElementById('server-tmpl').innerHTML;
     var html = [];
@@ -138,6 +139,10 @@
     {
         // reload the page if the servers are not set yet
         setTimeout(window.location.reload.bind(window.location), 200);
+    } else {
+        if(autoRedirectToLocal && SERVERS['external']) {
+            window.location.href = SERVERS['external'];
+        }
     }
 
     for (var key in SERVERS)
