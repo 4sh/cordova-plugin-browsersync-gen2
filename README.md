@@ -65,10 +65,10 @@ cordova run --live-reload --ignore=lib/**/*.* --ignore=assets/**
 ```
 
 ### Skipping start page
-To skip the start page and load directly the external route, use the `--skipStartPage` option, for example:
+To skip the start page and load directly the external route, use the `--skip-start-page` option, for example:
 
 ```
-cordova run --live-reload --skipStartPage
+cordova run --live-reload --skip-start-page
 ```
 
 ### Setting custom hostname
